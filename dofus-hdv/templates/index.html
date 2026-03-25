@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="5" />
+    <title>Dofus Market Tracker</title>
+    <style>
+        body {
+            font-family: Segoe UI, Tahoma, sans-serif;
+            margin: 24px;
+            background: #f6f8fb;
+            color: #1f2a37;
+        }
+        h1 {
+            margin-bottom: 16px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #d7dce3;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #ecf1f7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Historique des prix HDV</h1>
+    <table>
+        <tr><th>Objet</th><th>Prix</th><th>Date</th></tr>
+        {% for name, price, date in data %}
+        <tr><td>{{ name }}</td><td>{{ price }} k</td><td>{{ date }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
