@@ -1,0 +1,13 @@
+{
+	"tesseract_path": "C:/Program Files/Tesseract-OCR/tesseract.exe",
+	"columns": {
+		"name": {
+			"x": null,
+			"y": null
+		},
+		"price": {
+			"x": null,
+			"y": null
+		}
+	}
+}
